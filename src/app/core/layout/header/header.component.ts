@@ -12,6 +12,15 @@ export class HeaderComponent implements OnInit {
   constructor() {
   }
 
-  ngOnInit(): void {}
+  public isCollapsed = true;
+
+  ngOnInit(): void {
+    console.log(this.isCollapsed)
+  }
+
+  collapseNav(): void{
+    console.log(this.isCollapsed)
+    this.isCollapsed = !this.isCollapsed;
+  }
 
 }

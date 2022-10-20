@@ -1,3 +1,20 @@
-.body {
-  min-height: 100vh;
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  app-header{
+    //position: fixed;
+    width: 100%;
+    //overflow: hidden;
+  }
+
+  app-footer{
+    width: 100%;
+  }
+
+  main{
+    flex-grow: 1;
+    overflow: auto;
+  }
 }

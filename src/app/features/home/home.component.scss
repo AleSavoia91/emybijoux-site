@@ -21,6 +21,11 @@ app-carousel{
 .container{
   display: flex;
   flex-direction: column;
+
+  p{
+    text-align: center;
+    font-family: Caladea;
+  }
 }
 
 #welcomeTextRow{
