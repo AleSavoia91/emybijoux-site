@@ -1,0 +1,122 @@
+.carousel-container{
+  position: relative;
+  margin: auto;
+  text-align: center;
+  width: 400px;
+  border-radius: 15px;
+  //box-shadow: 0 6px 12px #333333;
+}
+
+.carousel-container img {
+  display: none;
+  border-radius: 15px;
+}
+
+.carousel-container img.image-active {
+  display: block;
+  width: 100%;
+}
+
+//dot
+.carousel-dot-container{
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.dot{
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  background-color: #C37B87;
+  border-radius: 50%;
+  display: inline-block;
+  transition: opacity 0.6s ease;
+  opacity: 0.5;
+}
+
+.active,
+.dot:hover{
+  opacity: 1;
+  color: #33B6AE;
+}
+
+//image transition fade effect
+.fade{
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.fade:not(.show) {
+  opacity: 100;
+}
+
+@keyframes fade {
+   from{
+     opacity: 0.8;
+   }
+   to{
+     opacity: 1;
+   }
+}
+
+.btn-carousel{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  padding: 0;
+  color: white;
+  text-align: center;
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn-prev{
+  left: 0;
+  &:hover{
+    transform: scale(115%);
+  }
+}
+
+.btn-next{
+  right: 0;
+  &:hover{
+    transform: scale(115%);
+  }
+}
+
+.icon-carousel{
+  color: white;
+  opacity: 0.5;
+  transition: all 0.15s ease;
+}
+
+.icon-carousel:hover{
+  color: white;
+  opacity: 0.9;
+}
+
+.icon-carousel:active{
+  opacity: 0.5;
+}
+
+.icon-next,
+.icon-prev{
+  font-size: 35px;
+}
+
+
+
+
+

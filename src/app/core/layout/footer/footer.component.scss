@@ -1,0 +1,41 @@
+.wrapper {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #33B6AE;
+  //border: solid;
+  min-height: 60px;
+  //position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.wrapper p {
+  margin: 0;
+  font-family: Caladea;
+  font-size: large;
+  font-style: oblique;
+}
+
+.social-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px 30px;
+
+  i {
+    font-size: 20px;
+    margin: 0px 15px;
+    cursor: pointer;
+    color: #333;
+
+    &:hover {
+      color: #000;
+      transform: scale(112%);
+    }
+
+  }
+
+}
+

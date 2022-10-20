@@ -1,0 +1,36 @@
+.navbar{
+  //background-color: #33B6AE !important;
+  background-color: white;
+  //border: solid;
+  min-height: 60px;
+  border-bottom: solid;
+  border-bottom-color: #C37B87;
+  border-bottom-width:2px;
+
+  img{
+    width: 100px;
+    height: 100px;
+  }
+
+
+  li{
+    font-size: 20px;
+    margin: 0px 15px;
+    cursor: pointer;
+    color: #333;
+    font-family: Caladea, serif;
+
+    &:hover {
+      color: #000;
+      transform: scale(115%);
+    }
+  }
+}
+
+#navbarNavAltMarkup {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  font-size: 1.2em;
+}
+
