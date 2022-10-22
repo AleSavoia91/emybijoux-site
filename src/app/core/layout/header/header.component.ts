@@ -18,9 +18,4 @@ export class HeaderComponent implements OnInit {
     console.log(this.isCollapsed)
   }
 
-  collapseNav(): void{
-    console.log(this.isCollapsed)
-    this.isCollapsed = !this.isCollapsed;
-  }
-
 }
