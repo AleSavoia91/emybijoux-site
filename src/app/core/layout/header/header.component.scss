@@ -1,11 +1,16 @@
+.wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
 .navbar{
   //background-color: #33B6AE !important;
   background-color: white;
   //border: solid;
   min-height: 60px;
-  border-bottom: solid;
-  border-bottom-color: #C37B87;
-  border-bottom-width:2px;
+  //border-bottom: solid;
+  //border-bottom-color: #C37B87;
+  //border-bottom-width:2px;
 
   img{
     width: 100px;
@@ -13,7 +18,7 @@
   }
 
 
-  li{
+  .navbar-nav li{
     font-size: 20px;
     margin: 0px 15px;
     cursor: pointer;
@@ -22,15 +27,24 @@
 
     &:hover {
       color: #000;
-      transform: scale(115%);
+      transform: scale(1.2);
     }
   }
 }
 
-#navbarNavAltMarkup {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 50px;
-  font-size: 1.2em;
+hr{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 0;
+  background-color: #33B6AE !important;
+  height: 2px;
+  opacity:0.4;
+}
+
+@media screen and (max-width:990px) {
+  .navbar-nav li :hover {
+      color: #000;
+      transform: scale(1);
+  }
 }
 

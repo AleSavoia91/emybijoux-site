@@ -24,7 +24,7 @@ export class CarouselComponent implements OnInit {
     }
   }
 
-  //autoslide method every 3 seconds
+  //autoslide method every 5 seconds
   autoSlideImages(): void{
     setInterval(() => {
       this.onNextClick();
