@@ -40,5 +40,25 @@ app-carousel{
 hr{
   color: #C37B87 !important;
   opacity: 0.5;
+  margin-top: 0;
 }
+
+#cardsRow{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  h2{
+    text-align: center;
+    font-family: Caladea;
+    font-style: oblique;
+    padding: 3%;
+    width: 100%;
+  }
+
+  app-card{
+    padding: 1.5%;
+  }
+}
+
 

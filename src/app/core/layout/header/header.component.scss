@@ -1,6 +1,8 @@
 .wrapper{
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid #33B6AE;
+
 }
 
 .navbar{
@@ -12,14 +14,8 @@
   //border-bottom-color: #C37B87;
   //border-bottom-width:2px;
 
-  img{
-    width: 100px;
-    height: 100px;
-  }
-
 
   .navbar-nav li{
-    font-size: 20px;
     margin: 0px 15px;
     cursor: pointer;
     color: #333;
@@ -27,7 +23,6 @@
 
     &:hover {
       color: #000;
-      transform: scale(1.2);
     }
   }
 }
@@ -42,9 +37,28 @@ hr{
 }
 
 @media screen and (max-width:990px) {
-  .navbar-nav li :hover {
-      color: #000;
-      transform: scale(1);
+  .navbar-nav li {
+    font-size: 17px;
+  }
+  img{
+    width: 150px;
+    height: 150px;
   }
 }
+
+@media screen and (min-width:990px) {
+  .navbar-nav li {
+    font-size: 25px;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  img {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+
+
 
